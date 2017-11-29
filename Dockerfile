@@ -47,7 +47,7 @@ RUN make -j
 # DATASET
 RUN wget http://vision.in.tum.de/mono/dataset/sequence_13.zip
 RUN unzip sequence_13
-RUN	bin/dso_dataset \
+CMD	bin/dso_dataset \
 		files=sequence_13/images.zip \
 		calib=sequence_13/camera.txt \
 		gamma=sequence_13/pcalib.txt \
