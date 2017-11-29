@@ -1,7 +1,7 @@
 FROM ubuntu:xenial
 
 # REQUIREMENTS
-RUN sed -i 's/http:\/\/archive.ubuntu.com/http:\/\/ftp.uni-stuttgart.de/g' /etc/apt/sources.list
+RUN sed -i 's/http:\/\/archive.ubuntu.com\/ubuntu\//mirror:\/\/mirrors.ubuntu.com\/mirrors.txt/g' /etc/apt/sources.list
 RUN apt-get update
 RUN apt-get install -y libsuitesparse-dev libeigen3-dev libboost-all-dev libopencv-dev zlib1g-dev cmake wget
 
